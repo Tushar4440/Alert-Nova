@@ -3,7 +3,7 @@
 import React, { useState } from 'react'
 import { Input } from './ui/input';
 import { Button } from './ui/button';
-import { Loader2, LoaderIcon } from 'lucide-react';
+import { LoaderIcon } from 'lucide-react';
 
 const AddProductForm = ({ user }) => {
 
@@ -23,7 +23,7 @@ const AddProductForm = ({ user }) => {
             value={url}
             onChange={(e) => setUrl(e.target.value)}
             placeholder="Paste the product/item URL (Amazon,Walmart,etc.)"
-            className="h-12 text-base"
+            className="h-12 text-base border-[#f8b7cd] border-4"
             required
             disabled={loading}
           />
@@ -46,6 +46,7 @@ const AddProductForm = ({ user }) => {
       </form>
 
       {/* Auth model */}
+          
     </>
   )
 }
